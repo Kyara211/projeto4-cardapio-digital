@@ -142,9 +142,9 @@ let desconto = 0
  alert(`
 Obrigado ${nome}!
 Pratos escolhidos:
-- ${nomeComida1} de R$ ${valor1.toFixed(2)}
-- ${nomeComida2} de R$ ${valor2.toFixed(2)}
-- ${nomeComida3} de R$ ${valor3.toFixed(2)}
+- ${Comida1} de R$ ${valor1.toFixed(2)}
+- ${Comida2} de R$ ${valor2.toFixed(2)}
+- ${Comida3} de R$ ${valor3.toFixed(2)}
 Total sem desconto: R$ ${total.toFixed(2)}
 Total com desconto: R$ ${totalDesconto.toFixed(2)}
     `)
@@ -152,10 +152,11 @@ Total com desconto: R$ ${totalDesconto.toFixed(2)}
     alert(`
 Obrigado ${nome}!
 Pratos escolhidos:
-- ${nomeComida1} de R$ ${valor1.toFixed(2)}
-- ${nomeComida2} de R$ ${valor2.toFixed(2)}
-- ${nomeComida3} de R$ ${valor3.toFixed(2)}
+- ${Comida1} de R$ ${valor1.toFixed(2)}
+- ${Comida2} de R$ ${valor2.toFixed(2)}
+- ${Comida3} de R$ ${valor3.toFixed(2)}
 Total sem desconto: R$ ${total.toFixed(2)}
 Total com desconto: não possui desconto
     `)
+
     }
