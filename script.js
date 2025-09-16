@@ -124,19 +124,7 @@ if (estudante == "s") {
     }
   }
 
-  let total = valor1 + valor2 + valor3
-let desconto = 0
- if (estudante === "s" && total > 50){
-    desconto = 15
- }else if (estudante === "s"){
-    desconto = 10
- }else if (total > 50){
-    desconto = 5
- }else{
-    desconto = 0
- }
-
- let totalDesconto = total - total * desconto / 100
+ let totalDesconto = valorTotal - valorTotal * desconto / 100
 
  if(desconto === 15 || desconto === 10 || desconto === 5){
  alert(`
@@ -160,4 +148,3 @@ Total com desconto: não possui desconto
     `)
 
     }
-
