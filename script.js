@@ -1,142 +1,147 @@
-let nome = prompt("Seja bem-vindo ao site do nosso restaurante, qual o seu nome")
-let perguntaEstudante = prompt("Você é estudante? S/N").toLowerCase()
-//Valores indefinidos
-let valor1 = 0
-let valor2 = 0
-let valor3 = 0
-alert(`A seguir, nosso menu:
-    (1) Hambúrguer – R$ 20
-    (2) Pizza – R$ 35
-    (3) Refrigerante – R$ 5
-    (4) Batata Frita – R$ 
-let escolha1 = parseInt(prompt(`
-    (1) Hambúrguer – R$ 20
-    (2) Pizza – R$ 35
-    (3) Refrigerante – R$ 5
-    (4) Batata Frita – R$ 12
-    Escolha o seu primerio prato 1/2/3/4/5(sair)
-    `))
-if (escolha1 === 5) {
-    alert("Você saiu do site.")
+let nome = prompt("Qual é o seu nome?")
+let verificacao = prompt(`Você é estudante? (sim/não)`).toLowerCase()
+let prato1 = parseFloat(prompt(`Escolha o primeiro prato com os números entre 1 e 4: 
+    (1) Hambúrguer - R$ 20
+    (2) Pizza - R$ 35
+    (3) Refrigerante - R$ 5
+    (4) Batata Frita - R$ 12
+
+    (5) Sair do Menu`))
+if (prato1 === 5) {
+    alert(`Obrigado pela visita, volte sempre!`)
 } else {
-    switch (escolha1) {
+    switch (prato1) {
         case 1:
-            escolha1 = "Hambúrguer"
-            valor1 = 20
+            item = "Hambúrguer"
+            precoitem = 20
+            alert("Hambúrguer - R$ 20")
             break
         case 2:
-            escolha1 = "Pizza"
-            valor1 = 35
+            item = "Pizza"
+            precoitem = 35
+            alert("Pizza - R$ 35")
             break
         case 3:
-            escolha1 = "Refrigerante"
-            valor1 = 5
+            item = "Refrigerante"
+            precoitem = 5
+            alert("Refrigerante - R$ 5")
             break
         case 4:
-            escolha1 = "Batata frita"
-            valor1 = 12
+            item = "Batata Frita"
+            precoitem = 12
+            alert("Batata Frita - R$ 12")
             break
+        default:
+            alert(`Escolha uma das opções`)
     }
-let escolha2 = parseInt(prompt(`
-    (1) Hambúrguer – R$ 20
-    (2) Pizza – R$ 35
-    (3) Refrigerante – R$ 5
-    (4) Batata Frita – R$ 12
-    Escolha o seu segundo prato 1/2/3/4/5(sair)
-    `))
-    if (escolha2 === 5 ) {
-        alert("Você saiu do site.")
-    } else {
 
-        switch (escolha2) {
+    let prato2 = parseFloat(prompt(`Escolha o segundo prato com os números entre 1 e 4: 
+    (1) Hambúrguer - R$ 20
+    (2) Pizza - R$ 35
+    (3) Refrigerante - R$ 5
+    (4) Batata Frita - R$ 12
+                
+    (5) Sair do Menu`))
+
+    if (prato2 == 5) {
+        alert(`Obrigado pela visita, volte sempre!`)
+    } else {
+        switch (prato2) {
             case 1:
-                escolha2 = "Hambúrguer"
-                valor2 = 20
+                item2 = "Hambúrguer"
+                precoitem2 = 20
+                alert("Hambúrguer - R$ 20")
                 break
             case 2:
-                escolha2 = "Pizza"
-                valor2 = 35
+                item2 = "Pizza"
+                precoitem2 = 35
+                alert("Pizza - R$ 35")
                 break
             case 3:
-                escolha2 = "Refrigerante"
-                valor2 = 5
+                item2 = "Refrigerante"
+                precoitem2 = 5
+                alert("Refrigerante - R$ 5")
                 break
             case 4:
-                escolha2 = "Batata frita"
-                valor2 = 12
+                item2 = "Batata Frita"
+                precoitem2 = 12
+                alert("Batata Frita - R$ 12")
                 break
+            default:
+    alert(`Escolha uma das opções`)
         }
-let escolha3 = parseInt(prompt(`
-    (1) Hambúrguer – R$ 20
-    (2) Pizza – R$ 35
-    (3) Refrigerante – R$ 5
-    (4) Batata Frita – R$ 12
-    Escolha o seu terceiro prato 1/2/3/4/5(sair)
-    `))
-        if (escolha3 === 5) {
-            alert("Você saiu do site.")
+        let prato3 = parseFloat(prompt(`Escolha o terceiro prato com os números entre 1 e 4: 
+    (1) Hambúrguer - R$ 20
+    (2) Pizza - R$ 35
+    (3) Refrigerante - R$ 5
+    (4) Batata Frita - R$ 12
+                        
+    (5) Sair do Menu`))
+
+        if (prato3 == 5) {
+            alert(`Obrigado pela visita, volte sempre!`)
         } else {
-            switch (escolha3) {
+            switch (prato3) {
                 case 1:
-                    escolha3 = "Hambúrguer"
-                    valor3 = 20
+                    item3 = "Hambúrguer"
+                    precoitem3 = 20
+                    alert("Hambúrguer - R$ 20")
                     break
                 case 2:
-                    escolha3 = "Pizza"
-                    valor3 = 35
+                    item3 = "Pizza"
+                    precoitem3 = 35
+                    alert("Pizza - R$ 35")
                     break
                 case 3:
-                    escolha3 = "Refrigerante"
-                    valor3 = 5
+                    item3 = "Refrigerante"
+                    precoitem3 = 5
+                    alert("Refrigerante - R$ 5")
                     break
                 case 4:
-                    escolha3 = "Batata frita"
-                    valor3 = 12
+                    item3 = "Batata Frita"
+                    precoitem3 = 12
+                    alert("Batata Frita - R$ 12")
                     break
+                default:
+    alert(`Escolha uma das opções`)
             }
-            //Calculos e o resultado final
-            let valorTotal = parseFloat(valor1 + valor2 + valor3)
-            if (perguntaEstudante === "s" && valorTotal > 50) {
-                let descontoEstudante = parseFloat((valorTotal * 10) / 100)
-                let descontoNormal =parseFloat((valorTotal * 5) / 100)
-                let final1 = parseFloat(valorTotal - (descontoEstudante + descontoNormal))
+
+            if (verificacao === "sim" && precoitem + precoitem2 + precoitem3 >= 50) {
                 alert(`Obrigado ${nome}!
-                    Pratos escolhidos:
-                    - ${escolha1} de R$${valor1.toFixed(2)}
-                    - ${escolha2} de R$${valor2.toFixed(2)}
-                    - ${escolha3} de R$${valor3.toFixed(2)}
-                    Total sem desconto: R$${valorTotal.toFixed(2)}
-                    Total com desconto: R$${final1.toFixed(2)}`)
-            } else if (perguntaEstudante === "s" && valorTotal <= 50) {
-                let descontoEstudante = parseFloat((valorTotal * 10) / 100)
-                let final2 = parseFloat(valorTotal - descontoEstudante)
+Pratos escolhidos: 
+${item} de ${precoitem} R$
+${item2} de ${precoitem2} R$
+${item3} de ${precoitem3} R$
+Total sem desconto: R$ ${precoitem + precoitem2 + precoitem3}
+Total com desconto: R$ ${precoitem + precoitem2 + precoitem3 - (((precoitem + precoitem2 + precoitem3) * 0.10) + ((precoitem + precoitem2 + precoitem3)* 0.05))}`)
+            } else if (verificacao === "não" && precoitem + precoitem2 + precoitem3 >= 50) {
                 alert(`Obrigado ${nome}!
-                    Pratos escolhidos:
-                    - ${escolha1} de R$${valor1.toFixed(2)}
-                    - ${escolha2} de R$${valor2.toFixed(2)}
-                    - ${escolha3} de R$${valor3.toFixed(2)}
-                    Total sem desconto: R$${valorTotal.toFixed(2)}
-                    Total com desconto: R$${final2.toFixed(2)}`)
-            } else if (perguntaEstudante === "n" && valorTotal > 50) {
-                let descontoNormal = parseFloat((valorTotal * 5) / 100)
-                let final3 = parseFloat(valorTotal - descontoNormal)
+Pratos escolhidos: 
+${item} de ${precoitem}
+${item2} de ${precoitem2} 
+${item3} de ${precoitem3}
+Total sem desconto: R$ ${precoitem + precoitem2 + precoitem3}
+Total com desconto: R$ ${precoitem + precoitem2 + precoitem3 - ((precoitem + precoitem2 + precoitem3) * 0.05)}`)
+            } else if (verificacao === "sim" && precoitem + precoitem2 + precoitem3 <= 50) {
                 alert(`Obrigado ${nome}!
-                    Pratos escolhidos:
-                    - ${escolha1} de R$${valor1.toFixed(2)}
-                    - ${escolha2} de R$${valor2.toFixed(2)}
-                    - ${escolha3} de R$${valor3.toFixed(2)}
-                    Total sem desconto: R$${valorTotal.toFixed(2)}
-                    Total com desconto: R$${final3.toFixed(2)}`)
-            } else if (perguntaEstudante === "n" && valorTotal <= 50) {
-                let final4 = parseFloat(valorTotal)
+Pratos escolhidos: 
+${item} de ${precoitem}
+${item2} de ${precoitem2} 
+${item3} de ${precoitem3}
+Total sem desconto: R$ ${precoitem + precoitem2 + precoitem3} 
+Total com desonto: R$ ${precoitem + precoitem2 + precoitem3 - ((precoitem + precoitem2 + precoitem3) * 0.10)}`)
+            } else {
                 alert(`Obrigado ${nome}!
-                    Pratos escolhidos:
-                    - ${escolha1} de R$${valor1.toFixed(2)}
-                    - ${escolha2} de R$${valor2.toFixed(2)}
-                    - ${escolha3} de R$${valor3.toFixed(2)}
-                    Total sem desconto: R$${valorTotal.toFixed(2)}
-                    Total com desconto: R$${final4.toFixed(2)}`)
-            } 
+Pratos escolhidos: 
+${item} de ${precoitem}
+${item2} de ${precoitem2} 
+${item3} de ${precoitem3}
+Total sem desconto: R$ ${precoitem + precoitem2 + precoitem3} 
+Total com desonto: Você não possui nenhum desconto.`)
+            }
         }
     }
+
 }
+
+          
